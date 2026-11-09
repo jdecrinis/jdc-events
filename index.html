@@ -298,16 +298,21 @@ section{scroll-margin-top:16px}
           <span style="color: #B8B6B0">Graz, Steiermark</span>
         </div>
       </div>
-      <form id="anfrage" novalidate style="background: #0E0E10; border: 1px solid #26262C; border-radius: 16px; padding: 32px; display: flex; flex-direction: column; gap: 20px">
-        <label for="f-name" style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">Name<input id="f-name" name="name" type="text" autocomplete="name" required style="background: #000000; border: 1px solid #3A3A42; border-radius: 10px; padding: 14px; color: #F5F3EE; font-size: 16px; font-family: inherit"></label>
-        <label for="f-mail" style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">E-Mail<input id="f-mail" name="email" type="email" autocomplete="email" style="background: #000000; border: 1px solid #3A3A42; border-radius: 10px; padding: 14px; color: #F5F3EE; font-size: 16px; font-family: inherit"></label>
-        <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px">
-          <label for="f-datum" style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">Datum<input id="f-datum" name="datum" type="date" style="background: #000000; border: 1px solid #3A3A42; border-radius: 10px; padding: 14px; color: #F5F3EE; font-size: 16px; font-family: inherit"></label>
-          <label for="f-gaeste" style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">Gäste (ca.)<input id="f-gaeste" name="gaeste" type="number" min="1" inputmode="numeric" style="background: #000000; border: 1px solid #3A3A42; border-radius: 10px; padding: 14px; color: #F5F3EE; font-size: 16px; font-family: inherit"></label>
+      <form id="anfrage" action="https://forminit.com/f/k96t1ripicq" method="post" novalidate style="background: #0E0E10; border: 1px solid #26262C; border-radius: 16px; padding: 32px; display: flex; flex-direction: column; gap: 20px; min-width: 0">
+        <label for="f-name" style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">Name<input id="f-name" name="fi-sender-fullName" type="text" autocomplete="name" required style="background: #000000; border: 1px solid #3A3A42; border-radius: 10px; padding: 14px; color: #F5F3EE; font-size: 16px; font-family: inherit"></label>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 16px">
+          <label for="f-mail" style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">E-Mail<input id="f-mail" name="fi-sender-email" type="email" autocomplete="email" required style="background: #000000; border: 1px solid #3A3A42; border-radius: 10px; padding: 14px; color: #F5F3EE; font-size: 16px; font-family: inherit"></label>
+          <label for="f-tel" style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500"><span>Telefon<span style="color: #8A8880; font-weight: 400"> (optional)</span></span><input id="f-tel" name="fi-sender-phone" type="tel" autocomplete="tel" style="background: #000000; border: 1px solid #3A3A42; border-radius: 10px; padding: 14px; color: #F5F3EE; font-size: 16px; font-family: inherit"></label>
         </div>
-        <label for="f-event" style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">Ihr Event<textarea id="f-event" name="event" rows="4" required style="background: #000000; border: 1px solid #3A3A42; border-radius: 10px; padding: 14px; color: #F5F3EE; font-size: 16px; font-family: inherit; resize: vertical"></textarea></label>
-        <button type="submit" style="background: #FFFFFF; color: #000000; border: 0; padding: 16px 28px; border-radius: 4px; font-weight: 600; font-size: 16px; cursor: pointer; min-height: 52px; font-family: inherit">Anfrage per E-Mail senden</button>
-        <p id="f-hinweis" style="margin: 0; color: #B8B6B0; font-size: 14px; line-height: 1.5">Öffnet Ihr E-Mail-Programm mit der fertigen Anfrage an office@decrinis.com.</p>
+        <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px">
+          <label for="f-datum" style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500"><span>Datum<span style="color: #8A8880; font-weight: 400"> (optional)</span></span><input id="f-datum" name="fi-date-veranstaltung" type="date" style="background: #000000; border: 1px solid #3A3A42; border-radius: 10px; padding: 14px; color: #F5F3EE; font-size: 16px; font-family: inherit"></label>
+          <label for="f-gaeste" style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500"><span>Gäste ca.<span style="color: #8A8880; font-weight: 400"> (optional)</span></span><input id="f-gaeste" name="fi-number-gaeste" type="number" min="1" step="1" inputmode="numeric" style="background: #000000; border: 1px solid #3A3A42; border-radius: 10px; padding: 14px; color: #F5F3EE; font-size: 16px; font-family: inherit"></label>
+        </div>
+        <label for="f-event" style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">Ihr Event<textarea id="f-event" name="fi-text-nachricht" rows="5" maxlength="5000" required placeholder="Art der Veranstaltung, Ort und was Sie sich vorstellen" style="background: #000000; border: 1px solid #3A3A42; border-radius: 10px; padding: 14px; color: #F5F3EE; font-size: 16px; font-family: inherit; resize: vertical"></textarea></label>
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0">
+        <p style="margin: 0; color: #8A8880; font-size: 13px; line-height: 1.5">Mit dem Absenden werden Ihre Angaben zur Bearbeitung der Anfrage an mich übermittelt. Mehr dazu in der <a href="datenschutz.html" style="color: #B8B6B0; text-decoration: underline">Datenschutzerklärung</a>.</p>
+        <button id="f-senden" type="submit" style="background: #FFFFFF; color: #000000; border: 0; padding: 16px 28px; border-radius: 4px; font-weight: 600; font-size: 16px; cursor: pointer; min-height: 52px; font-family: inherit">Anfrage senden</button>
+        <p id="f-hinweis" role="status" aria-live="polite" style="margin: 0; color: #B8B6B0; font-size: 15px; line-height: 1.5"></p>
       </form>
     </div>
   </section>
@@ -321,15 +326,32 @@ section{scroll-margin-top:16px}
   </footer>
 </div>
 <script>
-document.getElementById('anfrage').addEventListener('submit',function(e){
-  e.preventDefault();
-  var f=e.target, v=function(n){return (f.elements[n].value||'').trim();};
-  var hinweis=document.getElementById('f-hinweis');
-  if(!v('name')||!v('event')){hinweis.textContent='Bitte geben Sie Ihren Namen und ein paar Worte zu Ihrem Event an.';return;}
-  var body='Name: '+v('name')+'\nE-Mail: '+v('email')+'\nDatum: '+v('datum')+'\nGäste (ca.): '+v('gaeste')+'\n\n'+v('event');
-  location.href='mailto:office@decrinis.com?subject='+encodeURIComponent('Anfrage über jdc-events.at – '+v('name'))+'&body='+encodeURIComponent(body);
-  hinweis.textContent='Ihr E-Mail-Programm sollte sich jetzt öffnen. Falls nicht, schreiben Sie direkt an office@decrinis.com.';
-});
+(function(){
+  var form=document.getElementById('anfrage'), btn=document.getElementById('f-senden'), hinweis=document.getElementById('f-hinweis'), busy=false;
+  function zeige(text,ok){hinweis.textContent=text;hinweis.style.color=ok?'#F5F3EE':'#FF9B8F';}
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(busy) return;
+    var name=form.elements['fi-sender-fullName'], mail=form.elements['fi-sender-email'], text=form.elements['fi-text-nachricht'];
+    if(!name.value.trim()){zeige('Bitte geben Sie Ihren Namen an.');name.focus();return;}
+    if(!mail.value.trim()||!mail.checkValidity()){zeige('Bitte geben Sie eine gültige E-Mail-Adresse an, damit ich Ihnen antworten kann.');mail.focus();return;}
+    if(!text.value.trim()){zeige('Bitte beschreiben Sie kurz Ihr Event.');text.focus();return;}
+    var fd=new FormData(form);
+    ['fi-sender-phone','fi-date-veranstaltung','fi-number-gaeste'].forEach(function(n){if(!String(fd.get(n)||'').trim()) fd.delete(n);});
+    busy=true; btn.disabled=true; btn.textContent='Wird gesendet …'; zeige('',true);
+    fetch(form.action,{method:'POST',body:fd,headers:{'Accept':'application/json'}})
+      .then(function(r){return r.json().catch(function(){return {};}).then(function(d){return {status:r.status,data:d};});})
+      .then(function(res){
+        var d=res.data||{};
+        var ok=res.status<400 && !d.error && (d.success===true || (d.submission&&d.submission.hashId) || d.hashId);
+        if(ok){form.reset();zeige('Danke! Ihre Anfrage ist bei mir angekommen. Ich melde mich so bald wie möglich bei Ihnen.',true);}
+        else if(res.status===429||d.error==='TOO_MANY_REQUESTS'){zeige('Bitte warten Sie ein paar Sekunden und senden Sie dann noch einmal.');}
+        else{console.error('Forminit',res.status,d);zeige('Das hat leider nicht geklappt. Bitte schreiben Sie mir direkt an office@decrinis.com oder per WhatsApp.');}
+      })
+      .catch(function(err){console.error(err);zeige('Das hat leider nicht geklappt. Bitte prüfen Sie Ihre Internetverbindung oder schreiben Sie mir direkt an office@decrinis.com.');})
+      .then(function(){busy=false;btn.disabled=false;btn.textContent='Anfrage senden';});
+  });
+})();
 </script>
 </body>
 </html>
