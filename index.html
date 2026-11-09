@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JDC Events – Veranstaltungstechnik aus Graz</title>
+<meta name="description" content="JDC Events aus Graz: Tontechnik, Lichttechnik, Spezialeffekte und Pyrotechnik für Veranstaltungen aller Art. Planung, Systemtechnik, Betreuung und Vermietung.">
+<link rel="canonical" href="https://jdc-events.at/">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="JDC Events – Veranstaltungstechnik aus Graz">
+<meta property="og:description" content="JDC Events aus Graz: Tontechnik, Lichttechnik, Spezialeffekte und Pyrotechnik für Veranstaltungen aller Art. Planung, Systemtechnik, Betreuung und Vermietung.">
+<meta property="og:url" content="https://jdc-events.at/">
+<meta property="og:image" content="https://jdc-events.at/img/obi-konfetti.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+@font-face{font-family:Inter;font-style:normal;font-weight:300;font-display:swap;src:url(fonts/Inter-Light.woff) format('woff')}
+@font-face{font-family:Inter;font-style:normal;font-weight:400;font-display:swap;src:url(fonts/Inter-Regular.woff) format('woff')}
+@font-face{font-family:Inter;font-style:normal;font-weight:500;font-display:swap;src:url(fonts/Inter-Medium.woff) format('woff')}
+@font-face{font-family:Inter;font-style:normal;font-weight:600;font-display:swap;src:url(fonts/Inter-SemiBold.woff) format('woff')}
+@font-face{font-family:Inter;font-style:normal;font-weight:700;font-display:swap;src:url(fonts/Inter-Bold.woff) format('woff')}
+@font-face{font-family:Inter;font-style:normal;font-weight:800;font-display:swap;src:url(fonts/Inter-ExtraBold.woff) format('woff')}
+@font-face{font-family:Inter;font-style:normal;font-weight:900;font-display:swap;src:url(fonts/Inter-Black.woff) format('woff')}
+/* Single dark look, matching the black JDC Events logo */
+:root{--bg:#000000;--fg:#F5F3EE;--muted:#B8B6B0;--line:#222228;--accent:#FFFFFF;color-scheme:dark}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:Inter,"Helvetica Neue",Arial,sans-serif;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--fg);text-decoration:none}a:hover{color:var(--muted)}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+h1,h2,h3{text-wrap:balance}
+img{max-width:100%}
+section{scroll-margin-top:16px}
+.unused{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));background:#121214;border:1px solid #3A3A42;color:var(--muted);font-size:13px;padding:10px 14px;border-radius:4px;z-index:5}
+</style>
+</head>
+<body>
+<div id="seite" style="background: #000000; color: #F5F3EE; font-family: Inter, system-ui, sans-serif; min-height: 100vh">
+
+  <!-- NAV -->
+  <header style="border-bottom: 1px solid #222228">
+    <nav style="max-width: 1200px; margin: 0 auto; padding: 20px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+      <a href="#top" aria-label="JDC Events – zur Startseite" style="display: block"><img src="img/logo.png" alt="JDC Events" style="display: block; height: 48px; width: auto"></a>
+      <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 28px; font-size: 15px; font-weight: 500">
+        <a href="#leistungen">Leistungen</a>
+        <a href="#ablauf">Ablauf</a>
+        <a href="#ueber-mich">Über mich</a>
+        <a href="#referenzen">Referenzen</a>
+        <a href="#kontakt" style="background: #FFFFFF; color: #000000; padding: 12px 20px; border-radius: 4px; font-weight: 600">Anfrage senden</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="top" style="position: relative; overflow: hidden; border-bottom: 1px solid #222228">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 120px 24px 104px; display: flex; flex-direction: column; gap: 32px">
+      <p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #FFFFFF">Veranstaltungstechnik aus Graz</p>
+      <h1 style="margin: 0; font-family: Inter, sans-serif; font-weight: 800; font-size: clamp(48px, 8vw, 112px); line-height: 0.98; letter-spacing: -0.02em; display: flex; flex-direction: column">Licht. Ton.<span style="font-weight: 300; letter-spacing: 0">Effekte. Pyro.</span></h1>
+      <p style="margin: 0; font-size: 20px; line-height: 1.55; color: #B8B6B0; max-width: 560px">Ihr Technikpartner für Veranstaltungen aller Art – von der Planung über die Systemtechnik bis zur Betreuung vor Ort.</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 16px; margin-top: 8px">
+        <a href="#kontakt" style="background: #FFFFFF; color: #000000; padding: 16px 28px; border-radius: 4px; font-weight: 600; font-size: 16px">Projekt anfragen</a>
+        <a href="#leistungen" style="border: 1px solid #44444C; padding: 16px 28px; border-radius: 4px; font-weight: 600; font-size: 16px">Leistungen ansehen</a>
+      </div>
+    </div>
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 24px 64px">
+      <figure style="margin: 0; position: relative">
+        <img src="img/obi-konfetti.jpg" alt="Konfetti und Effekte über der Bühne bei 30 Jahre OBI" style="display: block; width: 100%; height: 560px; object-fit: cover; object-position: center 40%; border-radius: 16px">      </figure>
+    </div>
+  </section>
+
+  <!-- LEISTUNGEN -->
+  <section id="leistungen" style="border-bottom: 1px solid #222228">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 104px 24px; display: flex; flex-direction: column; gap: 48px">
+      <div style="display: flex; flex-direction: column; gap: 16px; max-width: 640px">
+        <p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #FFFFFF">Leistungen</p>
+        <h2 style="margin: 0; font-family: Inter, sans-serif; font-weight: 800; font-size: clamp(36px, 5vw, 56px); line-height: 1.05">Alles, was Ihre Veranstaltung zum Erlebnis macht.</h2>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px">
+        <article style="background: #0E0E10; border: 1px solid #26262C; border-radius: 16px; padding: 32px; display: flex; flex-direction: column; gap: 16px">
+          <svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M19 5a10 10 0 0 1 0 14"/></svg>
+          <h3 style="margin: 0; font-family: Inter, sans-serif; font-weight: 800; font-size: 24px">Tontechnik</h3>
+          <p style="margin: 0; color: #B8B6B0; line-height: 1.6">Beschallung für Konzerte, Firmenevents und Feste – klar und auf den Raum abgestimmt.</p>
+        </article>
+        <article style="background: #0E0E10; border: 1px solid #26262C; border-radius: 16px; padding: 32px; display: flex; flex-direction: column; gap: 16px">
+          <svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/></svg>
+          <h3 style="margin: 0; font-family: Inter, sans-serif; font-weight: 800; font-size: 24px">Lichttechnik</h3>
+          <p style="margin: 0; color: #B8B6B0; line-height: 1.6">Bühnen-, Effekt- und Ambientelicht, das Stimmung schafft und Ihre Show in Szene setzt.</p>
+        </article>
+        <article style="background: #0E0E10; border: 1px solid #26262C; border-radius: 16px; padding: 32px; display: flex; flex-direction: column; gap: 16px">
+          <svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4"/><path d="M12 17v4"/><path d="M3 12h4"/><path d="M17 12h4"/><path d="m5.6 5.6 2.8 2.8"/><path d="m15.6 15.6 2.8 2.8"/><path d="m5.6 18.4 2.8-2.8"/><path d="m15.6 8.4 2.8-2.8"/></svg>
+          <h3 style="margin: 0; font-family: Inter, sans-serif; font-weight: 800; font-size: 24px">Spezialeffekte</h3>
+          <p style="margin: 0; color: #B8B6B0; line-height: 1.6">Nebel, Konfetti, CO₂ und mehr – Momente, an die sich Ihre Gäste erinnern.</p>
+        </article>
+        <article style="background: #0E0E10; border: 1px solid #26262C; border-radius: 16px; padding: 32px; display: flex; flex-direction: column; gap: 16px">
+          <svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c1 3 4 5 4 9a4 4 0 0 1-8 0c0-2 1-3 2-4 0 2 1 3 2 3 0-3-1-5 0-8z"/><path d="M8 18h8"/><path d="M10 22h4"/></svg>
+          <h3 style="margin: 0; font-family: Inter, sans-serif; font-weight: 800; font-size: 24px">Pyrotechnik</h3>
+          <p style="margin: 0; color: #B8B6B0; line-height: 1.6">Bühnenpyrotechnik und Feuerwerk – sicher geplant und professionell umgesetzt.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABLAUF -->
+  <section id="ablauf" style="border-bottom: 1px solid #222228">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 104px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 64px">
+      <div style="display: flex; flex-direction: column; gap: 16px">
+        <p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #FFFFFF">So arbeiten wir</p>
+        <h2 style="margin: 0; font-family: Inter, sans-serif; font-weight: 800; font-size: clamp(36px, 5vw, 56px); line-height: 1.05">Ein Ansprechpartner. Von der Idee bis zum Abbau.</h2>
+      </div>
+      <ol style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column">
+        <li style="display: flex; gap: 24px; padding: 28px 0; border-top: 1px solid #26262C">
+          <span style="font-family: Inter, sans-serif; font-weight: 800; font-size: 20px; color: #FFFFFF">01</span>
+          <div style="display: flex; flex-direction: column; gap: 8px"><h3 style="margin: 0; font-size: 22px; font-weight: 600">Technikplanung</h3><p style="margin: 0; color: #B8B6B0; line-height: 1.6">Wir hören zu, sehen uns die Location an und planen genau die Technik, die Ihr Event braucht.</p></div>
+        </li>
+        <li style="display: flex; gap: 24px; padding: 28px 0; border-top: 1px solid #26262C">
+          <span style="font-family: Inter, sans-serif; font-weight: 800; font-size: 20px; color: #FFFFFF">02</span>
+          <div style="display: flex; flex-direction: column; gap: 8px"><h3 style="margin: 0; font-size: 22px; font-weight: 600">Systemtechnik</h3><p style="margin: 0; color: #B8B6B0; line-height: 1.6">Aufbau, Verkabelung und Abstimmung aller Systeme – damit am Abend alles läuft.</p></div>
+        </li>
+        <li style="display: flex; gap: 24px; padding: 28px 0; border-top: 1px solid #26262C">
+          <span style="font-family: Inter, sans-serif; font-weight: 800; font-size: 20px; color: #FFFFFF">03</span>
+          <div style="display: flex; flex-direction: column; gap: 8px"><h3 style="margin: 0; font-size: 22px; font-weight: 600">Betreuung</h3><p style="margin: 0; color: #B8B6B0; line-height: 1.6">Während der Veranstaltung bin ich vor Ort und betreue Ton, Effekte und Pyrotechnik live – vom Soundcheck bis zum Abbau.</p></div>
+        </li>
+        <li style="display: flex; gap: 24px; padding: 28px 0; border-top: 1px solid #26262C; border-bottom: 1px solid #26262C">
+          <span style="font-family: Inter, sans-serif; font-weight: 800; font-size: 20px; color: #FFFFFF">04</span>
+          <div style="display: flex; flex-direction: column; gap: 8px"><h3 style="margin: 0; font-size: 22px; font-weight: 600">Technikvermietung</h3><p style="margin: 0; color: #B8B6B0; line-height: 1.6">Sie brauchen nur das Equipment? Ton-, Licht- und Effekttechnik gibt es auch zur Miete.</p></div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ÜBER MICH -->
+  <section id="ueber-mich" style="border-bottom: 1px solid #222228">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 104px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 64px; align-items: center">
+      <img loading="lazy" decoding="async" src="img/johannes.jpg" alt="Johannes de Crinis bei der Arbeit" style="display: block; width: 100%; height: 640px; object-fit: cover; object-position: center 45%; border-radius: 20px">
+      <div style="display: flex; flex-direction: column; gap: 24px">
+        <p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #FFFFFF">Über mich</p>
+        <h2 style="margin: 0; font-family: Inter, sans-serif; font-weight: 800; font-size: clamp(36px, 5vw, 56px); line-height: 1.05">Johannes de Crinis</h2>
+        <p style="margin: 0; font-size: 18px; line-height: 1.65; color: #B8B6B0">Veranstaltungstechnik begleitet mich, seit ich klein bin. Im Theater habe ich zum ersten Mal erlebt, was Licht, Ton und Effekte aus einem Abend machen können. Daraus wurde ein Studium im Bereich Event Engineering und 2018 der Schritt in die Selbstständigkeit.</p>
+        <p style="margin: 0; font-size: 18px; line-height: 1.65; color: #B8B6B0">Mein Anspruch ist eine perfekte Show. Genauigkeit und Liebe zum Detail prägen jeden meiner Jobs, von der Planung bis zum letzten Cue.</p>
+        <p style="margin: 0; font-size: 18px; line-height: 1.65; color: #B8B6B0">Ich arbeite grundsätzlich selbst an jedem Projekt. Wenn es größer wird, greife ich auf einen riesigen Pool an Kolleginnen und Kollegen zurück, mit denen jeder Job einzigartig wird.</p>
+        <ul style="list-style: none; margin: 8px 0 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px">
+          <li style="background: #0E0E10; border: 1px solid #26262C; border-radius: 12px; padding: 16px; display: flex; flex-direction: column; gap: 4px"><span style="font-family: Inter, sans-serif; font-weight: 800; font-size: 24px; color: #FFFFFF">2018</span><span style="color: #B8B6B0; font-size: 14px">selbstständig seit</span></li>
+          <li style="background: #0E0E10; border: 1px solid #26262C; border-radius: 12px; padding: 16px; display: flex; flex-direction: column; gap: 4px"><span style="font-family: Inter, sans-serif; font-weight: 800; font-size: 20px">Event Engineering</span><span style="color: #B8B6B0; font-size: 14px">Studium</span></li>
+          <li style="background: #0E0E10; border: 1px solid #26262C; border-radius: 12px; padding: 16px; display: flex; flex-direction: column; gap: 4px"><span style="font-family: Inter, sans-serif; font-weight: 800; font-size: 20px">Pyrotechnik</span><span style="color: #B8B6B0; font-size: 14px">Scheine &amp; Weiterbildungen</span></li>
+          <li style="background: #0E0E10; border: 1px solid #26262C; border-radius: 12px; padding: 16px; display: flex; flex-direction: column; gap: 4px"><span style="font-family: Inter, sans-serif; font-weight: 800; font-size: 20px">Tonsysteme</span><span style="color: #B8B6B0; font-size: 14px">Weiterbildungen</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- REFERENZEN -->
+  <section id="referenzen" style="border-bottom: 1px solid #222228">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 104px 24px; display: flex; flex-direction: column; gap: 48px">
+      <div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 24px">
+        <div style="display: flex; flex-direction: column; gap: 16px">
+          <p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #FFFFFF">Referenzen</p>
+          <h2 style="margin: 0; font-family: Inter, sans-serif; font-weight: 800; font-size: clamp(36px, 5vw, 56px); line-height: 1.05">Einblicke in unsere Events</h2>
+        </div>
+        <a href="https://www.instagram.com/jdc___events/" style="font-weight: 600; border-bottom: 2px solid #FFFFFF; padding-bottom: 4px">Mehr auf Instagram →</a>
+      </div>
+      <h3 style="margin: 0; display: flex; align-items: center; gap: 16px; font-family: Inter, sans-serif; font-weight: 800; font-size: 22px; letter-spacing: 0.12em; text-transform: uppercase; color: #FFFFFF">SFX &amp; Pyro<span style="flex: 1; height: 1px; background: #26262C"></span></h3>
+      <article style="background: #0E0E10; border: 1px solid #26262C; border-radius: 20px; padding: 16px; display: flex; flex-direction: column; gap: 16px">
+        <img loading="lazy" decoding="async" src="img/edmund-flammenlinie.jpg" alt="EDMUND auf der Bühne hinter einer Flammenlinie" style="display: block; width: 100%; height: 520px; object-fit: cover; border-radius: 12px">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px">
+          <img loading="lazy" decoding="async" src="img/edmund-funken.jpg" alt="Funkenfontänen hinter den Sängern" style="display: block; width: 100%; height: 300px; object-fit: cover; border-radius: 12px">
+          <img loading="lazy" decoding="async" src="img/edmund-open-air.jpg" alt="Open-Air-Konzert mit Flammenlinie an der Bühnenkante" style="display: block; width: 100%; height: 300px; object-fit: cover; border-radius: 12px">
+          <img loading="lazy" decoding="async" src="img/edmund-drums.jpg" alt="" style="display: block; width: 100%; height: 300px; object-fit: cover; border-radius: 12px">
+        </div>
+        <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 12px; padding: 8px 8px 8px">
+          <h3 style="margin: 0; font-family: Inter, sans-serif; font-weight: 900; font-size: 32px; letter-spacing: 0.02em">EDMUND</h3>
+          <p style="margin: 0; color: #B8B6B0; font-size: 16px">SFX-Betreuung</p>
+        </div>
+      </article>
+      <article style="background: #0E0E10; border: 1px solid #26262C; border-radius: 20px; padding: 16px; display: flex; flex-direction: column; gap: 16px">
+        <img loading="lazy" decoding="async" src="img/obi-konfetti.jpg" alt="" style="display: block; width: 100%; height: 520px; object-fit: cover; border-radius: 12px">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px">
+          <img loading="lazy" decoding="async" src="img/obi-rot.jpg" alt="" style="display: block; width: 100%; height: 300px; object-fit: cover; border-radius: 12px">
+          <img loading="lazy" decoding="async" src="img/obi-blau.jpg" alt="" style="display: block; width: 100%; height: 300px; object-fit: cover; border-radius: 12px">
+        </div>
+        <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 12px; padding: 8px">
+          <h3 style="margin: 0; font-family: Inter, sans-serif; font-weight: 900; font-size: 32px; letter-spacing: 0.02em">30 JAHRE OBI</h3>
+          <p style="margin: 0; color: #B8B6B0; font-size: 16px">SFX- und Pyro-Konzept</p>
+        </div>
+      </article>
+      <article style="background: #0E0E10; border: 1px solid #26262C; border-radius: 20px; padding: 16px; display: flex; flex-direction: column; gap: 16px">
+        <div style="display: flex; flex-wrap: wrap; gap: 16px">
+          <img loading="lazy" decoding="async" src="img/fest-4.jpg" alt="" style="display: block; flex: 2 1 480px; min-width: 0; height: 560px; object-fit: cover; border-radius: 12px">
+          <img loading="lazy" decoding="async" src="img/fest-foh.jpg" alt="" style="display: block; flex: 1 1 260px; min-width: 0; height: 560px; object-fit: cover; object-position: center 62%; border-radius: 12px">
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px">
+          <img loading="lazy" decoding="async" src="img/fest-1.jpg" alt="" style="display: block; width: 100%; height: 260px; object-fit: cover; border-radius: 12px">
+          <img loading="lazy" decoding="async" src="img/fest-2.jpg" alt="" style="display: block; width: 100%; height: 260px; object-fit: cover; object-position: center 30%; border-radius: 12px">
+          <img loading="lazy" decoding="async" src="img/fest-3.jpg" alt="" style="display: block; width: 100%; height: 260px; object-fit: cover; border-radius: 12px">
+          <img loading="lazy" decoding="async" src="img/fest-5.jpg" alt="" style="display: block; width: 100%; height: 260px; object-fit: cover; border-radius: 12px">
+        </div>
+        <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 12px; padding: 8px">
+          <h3 style="margin: 0; font-family: Inter, sans-serif; font-weight: 900; font-size: 32px; letter-spacing: 0.02em">FESTIVALS IM DACH-RAUM</h3>
+          <p style="margin: 0; color: #B8B6B0; font-size: 16px">Diverse Operating-Jobs</p>
+        </div>
+      </article>
+      <h3 style="margin: 48px 0 0; display: flex; align-items: center; gap: 16px; font-family: Inter, sans-serif; font-weight: 800; font-size: 22px; letter-spacing: 0.12em; text-transform: uppercase; color: #FFFFFF">Tontechnik<span style="flex: 1; height: 1px; background: #26262C"></span></h3>
+      <article style="background: #0E0E10; border: 1px solid #26262C; border-radius: 20px; padding: 16px; display: flex; flex-direction: column; gap: 16px">
+        <div style="display: flex; flex-wrap: wrap; gap: 16px">
+          <img loading="lazy" decoding="async" src="img/f1-buehne.jpg" alt="" style="display: block; flex: 3 1 480px; min-width: 0; height: 480px; object-fit: cover; border-radius: 12px">
+          <img loading="lazy" decoding="async" src="img/f1-foh.jpg" alt="" style="display: block; flex: 2 1 320px; min-width: 0; height: 480px; object-fit: cover; border-radius: 12px">
+        </div>
+        <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 12px; padding: 8px">
+          <h3 style="margin: 0; font-family: Inter, sans-serif; font-weight: 900; font-size: 32px; letter-spacing: 0.02em">FANZONE FORMEL 1 SPIELBERG</h3>
+          <p style="margin: 0; color: #B8B6B0; font-size: 16px">FOH-Ton</p>
+        </div>
+      </article>
+      <article style="background: #0E0E10; border: 1px solid #26262C; border-radius: 20px; padding: 16px; display: flex; flex-direction: column; gap: 16px">
+        <div style="display: flex; flex-wrap: wrap; gap: 16px">
+          <img loading="lazy" decoding="async" src="img/ton-7.jpg" alt="" style="display: block; flex: 1 1 400px; min-width: 0; height: 440px; object-fit: cover; border-radius: 12px">
+          <img loading="lazy" decoding="async" src="img/ton-4.jpg" alt="" style="display: block; flex: 1 1 400px; min-width: 0; height: 440px; object-fit: cover; border-radius: 12px">
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px">
+          <img loading="lazy" decoding="async" src="img/ton-1.jpg" alt="" style="display: block; width: 100%; height: 380px; object-fit: cover; border-radius: 12px">
+          <img loading="lazy" decoding="async" src="img/ton-2.jpg" alt="" style="display: block; width: 100%; height: 380px; object-fit: cover; border-radius: 12px">
+          <img loading="lazy" decoding="async" src="img/ton-5.jpg" alt="" style="display: block; width: 100%; height: 380px; object-fit: cover; object-position: center 55%; border-radius: 12px">
+          <img loading="lazy" decoding="async" src="img/ton-8.jpg" alt="" style="display: block; width: 100%; height: 380px; object-fit: cover; border-radius: 12px">
+          <img loading="lazy" decoding="async" src="img/ton-9.jpg" alt="" style="display: block; width: 100%; height: 380px; object-fit: cover; border-radius: 12px">
+          <img loading="lazy" decoding="async" src="img/ton-3.jpg" alt="" style="display: block; width: 100%; height: 380px; object-fit: cover; object-position: center 45%; border-radius: 12px">
+          <img loading="lazy" decoding="async" src="img/ton-6.jpg" alt="" style="display: block; width: 100%; height: 380px; object-fit: cover; object-position: center 40%; border-radius: 12px">
+          <img loading="lazy" decoding="async" src="img/ton-10.jpg" alt="" style="display: block; width: 100%; height: 380px; object-fit: cover; border-radius: 12px">
+        </div>
+        <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 12px; padding: 8px">
+        <div style="display: flex; flex-direction: column; gap: 6px">
+          <h3 style="margin: 0; font-family: Inter, sans-serif; font-weight: 900; font-size: 32px; letter-spacing: 0.02em">VERANSTALTUNGEN ALLER ART</h3>
+          <p style="margin: 0; color: #B8B6B0; font-size: 16px">Vom Ballsaal bis zur Almwiese, in jeder Größe</p>
+        </div>
+        <p style="margin: 0; color: #B8B6B0; font-size: 16px">FOH-Ton und Tonsystem</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- KONTAKT -->
+  <section id="kontakt">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 104px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 48px; align-items: start">
+      <div style="display: flex; flex-direction: column; gap: 24px">
+        <p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #FFFFFF">Kontakt</p>
+        <h2 style="margin: 0; font-family: Inter, sans-serif; font-weight: 900; font-size: clamp(40px, 6vw, 72px); line-height: 1">Planen Sie ein Event?</h2>
+        <p style="margin: 0; font-size: 18px; color: #B8B6B0; line-height: 1.6; max-width: 460px">Erzählen Sie uns kurz von Ihrer Veranstaltung – wir melden uns mit einem passenden Angebot.</p>
+        <div style="display: flex; flex-direction: column; gap: 12px; font-size: 18px">
+          <a href="mailto:office@decrinis.com">office@decrinis.com</a>
+          <a href="tel:+436643897633">+43 664 389 76 33</a>
+          <span style="color: #B8B6B0">Graz, Steiermark</span>
+        </div>
+      </div>
+      <form id="anfrage" novalidate style="background: #0E0E10; border: 1px solid #26262C; border-radius: 16px; padding: 32px; display: flex; flex-direction: column; gap: 20px">
+        <label for="f-name" style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">Name<input id="f-name" name="name" type="text" autocomplete="name" required style="background: #000000; border: 1px solid #3A3A42; border-radius: 10px; padding: 14px; color: #F5F3EE; font-size: 16px; font-family: inherit"></label>
+        <label for="f-mail" style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">E-Mail<input id="f-mail" name="email" type="email" autocomplete="email" style="background: #000000; border: 1px solid #3A3A42; border-radius: 10px; padding: 14px; color: #F5F3EE; font-size: 16px; font-family: inherit"></label>
+        <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px">
+          <label for="f-datum" style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">Datum<input id="f-datum" name="datum" type="date" style="background: #000000; border: 1px solid #3A3A42; border-radius: 10px; padding: 14px; color: #F5F3EE; font-size: 16px; font-family: inherit"></label>
+          <label for="f-gaeste" style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">Gäste (ca.)<input id="f-gaeste" name="gaeste" type="number" min="1" inputmode="numeric" style="background: #000000; border: 1px solid #3A3A42; border-radius: 10px; padding: 14px; color: #F5F3EE; font-size: 16px; font-family: inherit"></label>
+        </div>
+        <label for="f-event" style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">Ihr Event<textarea id="f-event" name="event" rows="4" required style="background: #000000; border: 1px solid #3A3A42; border-radius: 10px; padding: 14px; color: #F5F3EE; font-size: 16px; font-family: inherit; resize: vertical"></textarea></label>
+        <button type="submit" style="background: #FFFFFF; color: #000000; border: 0; padding: 16px 28px; border-radius: 4px; font-weight: 600; font-size: 16px; cursor: pointer; min-height: 52px; font-family: inherit">Anfrage per E-Mail senden</button>
+        <p id="f-hinweis" style="margin: 0; color: #B8B6B0; font-size: 14px; line-height: 1.5">Öffnet Ihr E-Mail-Programm mit der fertigen Anfrage an office@decrinis.com.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="border-top: 1px solid #222228">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 32px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; font-size: 14px; color: #8A8880">
+      <div style="display: flex; align-items: center; gap: 16px"><img src="img/logo.png" alt="JDC Events" style="display: block; height: 32px; width: auto"><span>© 2026 Johannes de Crinis · Graz</span></div>
+      <div style="display: flex; gap: 24px"><a href="https://www.instagram.com/jdc___events/" style="color: #B8B6B0">Instagram</a><a href="impressum.html" style="color: #B8B6B0">Impressum</a><a href="datenschutz.html" style="color: #B8B6B0">Datenschutz</a></div>
+    </div>
+  </footer>
+</div>
+<script>
+document.getElementById('anfrage').addEventListener('submit',function(e){
+  e.preventDefault();
+  var f=e.target, v=function(n){return (f.elements[n].value||'').trim();};
+  var hinweis=document.getElementById('f-hinweis');
+  if(!v('name')||!v('event')){hinweis.textContent='Bitte geben Sie Ihren Namen und ein paar Worte zu Ihrem Event an.';return;}
+  var body='Name: '+v('name')+'\nE-Mail: '+v('email')+'\nDatum: '+v('datum')+'\nGäste (ca.): '+v('gaeste')+'\n\n'+v('event');
+  location.href='mailto:office@decrinis.com?subject='+encodeURIComponent('Anfrage über jdc-events.at – '+v('name'))+'&body='+encodeURIComponent(body);
+  hinweis.textContent='Ihr E-Mail-Programm sollte sich jetzt öffnen. Falls nicht, schreiben Sie direkt an office@decrinis.com.';
+});
+</script>
+</body>
+</html>
