@@ -47,6 +47,8 @@ section{scroll-margin-top:16px}
         <a href="#ablauf">Ablauf</a>
         <a href="#ueber-mich">Über mich</a>
         <a href="#referenzen">Referenzen</a>
+        <!-- AKTUELLES-NAV: beim ersten Beitrag die Kommentarzeichen entfernen -->
+        <!-- <a href="#aktuelles">Aktuelles</a> -->
         <a href="#kontakt" style="background: #FFFFFF; color: #000000; padding: 12px 20px; border-radius: 4px; font-weight: 600">Anfrage senden</a>
       </div>
     </nav>
@@ -233,6 +235,32 @@ section{scroll-margin-top:16px}
         <p style="margin: 0; color: #B8B6B0; font-size: 16px">FOH-Ton und Tonsystem</p>
         </div>
       </article>
+    </div>
+  </section>
+
+  <!-- AKTUELLES
+       Beim ersten Beitrag: "hidden" aus dem <section>-Tag entfernen und den Menülink oben aktivieren.
+       Neue Beiträge immer GANZ OBEN in die Liste (neueste zuerst). Vorlage für einen Beitrag:
+
+        <article style="background: #0E0E10; border: 1px solid #26262C; border-radius: 16px; overflow: hidden; display: flex; flex-direction: column">
+          <img loading="lazy" decoding="async" src="img/aktuelles/JJJJ-MM-TT-name.jpg" alt="" style="display: block; width: 100%; aspect-ratio: 4 / 3; max-width: 100%; object-fit: cover">
+          <div style="padding: 24px; display: flex; flex-direction: column; gap: 10px">
+            <time datetime="JJJJ-MM-TT" style="color: #B8B6B0; font-size: 14px; font-weight: 500; letter-spacing: 0.04em">TT. Monat JJJJ</time>
+            <h3 style="margin: 0; font-size: 22px; font-weight: 700; line-height: 1.25">Titel</h3>
+            <p style="margin: 0; color: #B8B6B0; line-height: 1.6">Ein bis drei Sätze.</p>
+          </div>
+        </article>
+  -->
+  <section id="aktuelles" hidden style="border-bottom: 1px solid #222228">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 104px 24px; display: flex; flex-direction: column; gap: 48px">
+      <div style="display: flex; flex-direction: column; gap: 16px; max-width: 640px">
+        <p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #FFFFFF">Aktuelles</p>
+        <h2 style="margin: 0; font-family: Inter, sans-serif; font-weight: 800; font-size: clamp(36px, 5vw, 56px); line-height: 1.05">Zuletzt im Einsatz</h2>
+      </div>
+      <div id="aktuelles-liste" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px">
+        <!-- BEITRÄGE START -->
+        <!-- BEITRÄGE ENDE -->
+      </div>
     </div>
   </section>
 
