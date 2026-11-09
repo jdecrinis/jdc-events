@@ -4,7 +4,7 @@ Website von JDC Events (Johannes de Crinis, Graz). Statische Seite, gehostet üb
 
 ## Aufbau
 
-- `index.html` – Startseite (Leistungen, So arbeiten wir, Über mich, Referenzen, Kontakt)
+- `index.html` – Startseite (Leistungen, Über mich, Referenzen, Aktuelles, Ablauf, Kontakt)
 - `impressum.html`, `datenschutz.html` – Rechtliches
 - `img/` – Fotos (JPG, max. 1800 px lange Kante, Qualität ~80)
 - `fonts/` – Schrift Inter, lokal eingebunden (keine Verbindung zu Google)
