@@ -51,7 +51,7 @@ section{scroll-margin-top:84px}
 .kopf-menue .btn{min-height:44px;padding:10px 20px;font-size:15px}
 .kopf-knopf{display:none;align-items:center;justify-content:center;gap:10px;min-height:44px;padding:0 4px 0 12px;background:none;border:0;color:var(--fg);font:600 15px/1 Inter,"Helvetica Neue",Arial,sans-serif;letter-spacing:.06em;text-transform:uppercase;cursor:pointer}
 .kopf-knopf-linien{position:relative;width:22px;height:14px}
-.kopf-knopf-linien::before,.kopf-knopf-linien::after,.kopf-knopf-linien span{content:"";position:absolute;left:0;right:0;height:2px;background:currentColor;transition:transform .2s,opacity .2s}
+.kopf-knopf-linien::before,.kopf-knopf-linien::after,.kopf-knopf-linien span{content:"";position:absolute;left:0;right:0;height:2px;background:currentColor;transition:transform .45s cubic-bezier(.65,0,.35,1),opacity .3s}
 .kopf-knopf-linien::before{top:0}.kopf-knopf-linien span{top:6px}.kopf-knopf-linien::after{bottom:0}
 .kopf.offen .kopf-knopf-linien::before{transform:translateY(6px) rotate(45deg)}
 .kopf.offen .kopf-knopf-linien span{opacity:0}
@@ -62,28 +62,32 @@ section{scroll-margin-top:84px}
   .kopf-knopf{display:inline-flex}
   .kopf-menue{display:flex;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;padding:4px 20px 24px;background:#000000;border-bottom:1px solid var(--line);
     visibility:hidden;opacity:0;clip-path:inset(0 0 100% 0);
-    transition:clip-path .38s cubic-bezier(.22,.8,.24,1),opacity .25s ease,visibility 0s linear .38s}
-  .kopf.offen .kopf-menue{visibility:visible;opacity:1;clip-path:inset(0 0 0 0);transition:clip-path .45s cubic-bezier(.22,.8,.24,1),opacity .2s ease,visibility 0s}
-  .kopf-menue a{padding:16px 0;border-bottom:1px solid var(--line);font-size:20px;font-weight:600;opacity:0;transform:translateY(-10px);transition:opacity .2s ease,transform .2s ease}
-  .kopf.offen .kopf-menue a{opacity:1;transform:none;transition:opacity .35s ease,transform .45s cubic-bezier(.22,.8,.24,1)}
-  .kopf.offen .kopf-menue a:nth-of-type(1){transition-delay:.06s}
-  .kopf.offen .kopf-menue a:nth-of-type(2){transition-delay:.10s}
-  .kopf.offen .kopf-menue a:nth-of-type(3){transition-delay:.14s}
-  .kopf.offen .kopf-menue a:nth-of-type(4){transition-delay:.18s}
-  .kopf.offen .kopf-menue a:nth-of-type(5){transition-delay:.22s}
-  .kopf.offen .kopf-menue a:nth-of-type(6){transition-delay:.26s}
-  .kopf.offen .kopf-menue a:nth-of-type(7){transition-delay:.30s}
+    transition:clip-path .6s cubic-bezier(.65,0,.35,1),opacity .45s ease .1s,visibility 0s linear .6s}
+  .kopf.offen .kopf-menue{visibility:visible;opacity:1;clip-path:inset(0 0 0 0);transition:clip-path .8s cubic-bezier(.22,.8,.24,1),opacity .3s ease,visibility 0s}
+  .kopf-menue a{padding:16px 0;border-bottom:1px solid var(--line);font-size:20px;font-weight:600;opacity:0;transform:translateY(-12px);transition:opacity .3s ease,transform .3s ease}
+  .kopf.offen .kopf-menue a{opacity:1;transform:none;transition:opacity .55s ease,transform .7s cubic-bezier(.22,.8,.24,1)}
+  .kopf.offen .kopf-menue a:nth-of-type(1){transition-delay:0.12s}
+  .kopf.offen .kopf-menue a:nth-of-type(2){transition-delay:0.19s}
+  .kopf.offen .kopf-menue a:nth-of-type(3){transition-delay:0.26s}
+  .kopf.offen .kopf-menue a:nth-of-type(4){transition-delay:0.33s}
+  .kopf.offen .kopf-menue a:nth-of-type(5){transition-delay:0.40s}
+  .kopf.offen .kopf-menue a:nth-of-type(6){transition-delay:0.47s}
+  .kopf.offen .kopf-menue a:nth-of-type(7){transition-delay:0.54s}
   .kopf-menue a.btn{margin-top:20px;border-bottom:0;justify-content:center;font-size:16px;min-height:52px}
 }
 @media (prefers-reduced-motion:reduce){.kopf-knopf-linien::before,.kopf-knopf-linien::after,.kopf-knopf-linien span,.kopf-menue,.kopf.offen .kopf-menue,.kopf-menue a,.kopf.offen .kopf-menue a{transition:none!important}}
 .faq{border-top:1px solid #26262C}
 .faq:last-child{border-bottom:1px solid #26262C}
-.faq summary{cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:44px;padding:22px 0;font-size:clamp(18px,2.4vw,22px);font-weight:600;line-height:1.35}
+.faq summary{position:relative;cursor:pointer;list-style:none;display:block;min-height:44px;padding:22px 48px 22px 0;font-size:clamp(18px,2.4vw,22px);font-weight:600;line-height:1.35}
 .faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";flex:none;font-size:28px;line-height:1;font-weight:300;color:#B8B6B0}
-.faq[open] summary::after{content:"\2212"}
+.faq summary::before,.faq summary::after{content:"";position:absolute;right:4px;top:50%;width:18px;height:2px;margin-top:-1px;background:#B8B6B0;transition:transform .55s cubic-bezier(.65,0,.35,1),background .3s}
+.faq summary::after{transform:rotate(90deg)}
+.faq.offen summary::after{transform:rotate(0deg)}
+.faq.offen summary::before{transform:rotate(180deg)}
+.faq-antwort{overflow:hidden}
 .faq p{margin:0;padding:0 0 24px;max-width:65ch;color:#B8B6B0;font-size:17px;line-height:1.65}
-@media (hover:hover){.faq summary:hover::after{color:#FFFFFF}}
+@media (hover:hover){.faq summary:hover::before,.faq summary:hover::after{background:#FFFFFF}}
+@media (prefers-reduced-motion:reduce){.faq summary::before,.faq summary::after{transition:none}}
 .mehr{border-top:1px solid #26262C}
 .mehr summary{cursor:pointer;list-style:none;display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:8px;font-weight:600;font-size:15px}
 .mehr summary::-webkit-details-marker{display:none}
@@ -379,27 +383,27 @@ section{scroll-margin-top:84px}
       <div style="min-width: 0">
         <details class="faq">
           <summary>Wie früh sollte ich anfragen?</summary>
-          <p>Am besten so früh wie möglich, vor allem in der Hauptsaison von Mai bis September. Für Tontechnik reichen oft wenige Wochen Vorlauf. Bei Pyrotechnik sollten Sie mindestens 6 bis 8 Wochen einplanen, weil Genehmigungen Zeit brauchen. Kurzfristige Anfragen versuche ich trotzdem möglich zu machen.</p>
+          <div class="faq-antwort"><p>Am besten so früh wie möglich, vor allem in der Hauptsaison von Mai bis September. Für Tontechnik reichen oft wenige Wochen Vorlauf. Bei Pyrotechnik sollten Sie mindestens 6 bis 8 Wochen einplanen, weil Genehmigungen Zeit brauchen. Kurzfristige Anfragen versuche ich trotzdem möglich zu machen.</p></div>
         </details>
         <details class="faq">
           <summary>Kümmern Sie sich um Genehmigungen und Behörden?</summary>
-          <p>Ja. Bei Pyrotechnik übernehme ich die nötigen Anmeldungen und Genehmigungen bei den Behörden und stimme mich bei Bedarf mit Location und Feuerwehr ab. Sie müssen sich darum nicht selbst kümmern.</p>
+          <div class="faq-antwort"><p>Ja. Bei Pyrotechnik übernehme ich die nötigen Anmeldungen und Genehmigungen bei den Behörden und stimme mich bei Bedarf mit Location und Feuerwehr ab. Sie müssen sich darum nicht selbst kümmern.</p></div>
         </details>
         <details class="faq">
           <summary>Ist Pyrotechnik auch in Innenräumen möglich?</summary>
-          <p>Ja. Was in Ihrer Location genau möglich ist, hängt von Raumhöhe, Brandschutz und den Vorgaben des Hauses ab. Das klären wir vorab gemeinsam. Ist Pyrotechnik einmal nicht möglich, lässt sich mit Spezialeffekten wie Flammen oder Nebel trotzdem eine starke Show umsetzen.</p>
+          <div class="faq-antwort"><p>Ja. Was in Ihrer Location genau möglich ist, hängt von Raumhöhe, Brandschutz und den Vorgaben des Hauses ab. Das klären wir vorab gemeinsam. Ist Pyrotechnik einmal nicht möglich, lässt sich mit Spezialeffekten wie Flammen oder Nebel trotzdem eine starke Show umsetzen.</p></div>
         </details>
         <details class="faq">
           <summary>Wo sind Sie im Einsatz?</summary>
-          <p>Meine Basis ist Graz. Von hier aus bin ich vor allem in Österreich, Deutschland und der Schweiz unterwegs – auf Festivals, Konzerten und Veranstaltungen jeder Größe. Auch Einsätze im Ausland sind kein Problem: Ich war schon über den deutschsprachigen Raum hinaus im Einsatz und reise für Ihre Veranstaltung gerne an.</p>
+          <div class="faq-antwort"><p>Meine Basis ist Graz. Von hier aus bin ich vor allem in Österreich, Deutschland und der Schweiz unterwegs – auf Festivals, Konzerten und Veranstaltungen jeder Größe. Auch Einsätze im Ausland sind kein Problem: Ich war schon über den deutschsprachigen Raum hinaus im Einsatz und reise für Ihre Veranstaltung gerne an.</p></div>
         </details>
         <details class="faq">
           <summary>Was brauche ich vor Ort?</summary>
-          <p>Meist nur ausreichend Strom, Platz für Aufbau und Technik und einen Ansprechpartner am Veranstaltungstag. Was genau gebraucht wird, etwa Stromanschlüsse, Aufbauzeiten oder Zufahrt, kläre ich im Vorgespräch und schicke es Ihnen gesammelt.</p>
+          <div class="faq-antwort"><p>Meist nur ausreichend Strom, Platz für Aufbau und Technik und einen Ansprechpartner am Veranstaltungstag. Was genau gebraucht wird, etwa Stromanschlüsse, Aufbauzeiten oder Zufahrt, kläre ich im Vorgespräch und schicke es Ihnen gesammelt.</p></div>
         </details>
         <details class="faq">
           <summary>Kann ich Technik auch nur mieten?</summary>
-          <p>Ja, Geräte können Sie bei mir auch einfach mieten. Sprechen Sie mich dazu am besten direkt an.</p>
+          <div class="faq-antwort"><p>Ja, Geräte können Sie bei mir auch einfach mieten. Sprechen Sie mich dazu am besten direkt an.</p></div>
         </details>
       </div>
     </div>
@@ -415,6 +419,25 @@ section{scroll-margin-top:84px}
   </footer>
 </div>
 <script>
+(function(){
+  var ruhig=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.querySelectorAll('details.faq').forEach(function(d){
+    var sum=d.querySelector('summary'), box=d.querySelector('.faq-antwort'), anim=null;
+    if(d.open) d.classList.add('offen');
+    sum.addEventListener('click',function(e){
+      e.preventDefault();
+      var auf=!d.classList.contains('offen');
+      d.classList.toggle('offen',auf);
+      if(anim) anim.cancel();
+      if(auf) d.open=true;
+      if(ruhig||!box.animate){ d.open=auf; return; }
+      var h=box.scrollHeight;
+      anim=box.animate(auf?[{height:'0px',opacity:0},{height:h+'px',opacity:1}]:[{height:h+'px',opacity:1},{height:'0px',opacity:0}],
+        {duration:auf?600:450,easing:'cubic-bezier(.22,.8,.24,1)'});
+      anim.onfinish=function(){ anim=null; if(!auf) d.open=false; };
+    });
+  });
+})();
 (function(){
   var kopf=document.getElementById('kopf'), knopf=document.getElementById('kopf-knopf'), menue=document.getElementById('kopf-menue');
   function setze(offen){kopf.classList.toggle('offen',offen);knopf.setAttribute('aria-expanded',offen?'true':'false');}
