@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /signatur/
 
 Sitemap: https://jdc-events.at/sitemap.xml
